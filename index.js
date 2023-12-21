@@ -1,7 +1,7 @@
 function song(){
 
   console.log('ok')
-var audio = new Audio("moye moye pro.mp3");
+var audio = new Audio("moye moye sex.mp3");
 audio.play();
 audio.loop = true;
 
