@@ -1,0 +1,111 @@
+.container{
+    height: 100%;
+    width: 100%;
+
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap");
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mountains of Christmas", serif;
+  background: black;
+  
+}
+
+.marquee-1 {
+  transform: rotate(5deg);
+}
+
+.marquee-2 {
+  transform: rotate(-5deg);
+}
+
+img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 50vw;
+  /* filter: grayscale(1) drop-shadow(-3px 3px 0px #fff)
+    drop-shadow(3px -3px 0px #fff) drop-shadow(-3px -3px 0px #fff)
+    drop-shadow(3px 3px 0px #fff) drop-shadow(3px 3px 20px #00000083); */
+}
+
+@media (max-width:450px) {
+    img{
+        height: 70vh;
+        width: 100vw;
+    }
+}
+
+.marquee {
+  width: 100%;
+  height: fit;
+  margin-top: 20vh;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #d9ff00;
+  border-top: 2px solid #c30f16;
+  border-bottom: 2px solid #c30f16;
+  font-family: "Mountains of Christmas", serif;
+  filter: drop-shadow(-3px 3px 0px #fff) drop-shadow(3px -3px 0px #fff)
+    drop-shadow(-3px -3px 0px #fff) drop-shadow(3px 3px 0px #fff)
+    drop-shadow(3px 3px 20px #00000083);
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 2px 0;
+  color: #000000; /* Replace with your color */
+}
+
+.marquee-text {
+  display: inline-block;
+  padding: 0 4px;
+  font-size: 6em;
+  text-transform: uppercase;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+audio
+{
+  width: 109px;
+  height: 53px;
+
+
+  
+
+}
+
+#audiosection
+{
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn{
+  opacity: 0;
+}
+
